@@ -7,6 +7,8 @@
 
     body {
       font-family: 'Roboto', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
     }
 
     header {
@@ -109,6 +111,85 @@
       gap: 5px;
     }
 
+    /* Estilos productos */
+
+    .product-section {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 1200px;
+      margin: auto;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .product-section h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .product-list {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      scroll-snap-type: x mandatory;
+    }
+
+    .product-card {
+      flex: 0 0 auto;
+      width: 200px;
+      background: white;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      scroll-snap-align: start;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .product-title {
+      font-size: 14px;
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 13px;
+    }
+
+    .price {
+      font-size: 20px;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .discount {
+      color: #00a650;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .installments {
+      font-size: 13px;
+      color: #666;
+    }
+
+    .shipping {
+      font-size: 13px;
+      font-weight: bold;
+      color: #00a650;
+      margin-top: 5px;
+      display: inline-block;
+      padding: 2px 6px;
+      background-color: #e6f8ec;
+      border-radius: 4px;
+    }
+
     /* Estilos footer Joel */
 
     .footer {
@@ -179,7 +260,7 @@
       .meli-banner {
         display: none;
       }
-      
+
       .footer-container {
           flex-direction: column;
           align-items: center;
